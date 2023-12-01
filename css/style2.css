@@ -1,0 +1,205 @@
+:root {
+    --main-text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--main-text-color);
+    overflow-x: hidden;
+    font-family: "Montserrat";
+    background-repeat: no-repeat;
+    background-color: hsl(216, 22%, 5%);;
+    background-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: calc(18px + (24 - 18) * ((100vw - 600px) / (1920 - 600)));
+}
+
+.body_hide {
+    opacity: 0;
+    transition: 0.9s opacity ease-in-out;
+}
+.body_visible {
+    opacity: 1;
+}
+
+.base-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.base-flex div {
+    padding: 0 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.fright {
+    flex-direction: row-reverse;
+}
+.fright div {
+    text-align: right;
+}
+.base-flex img {
+    flex-shrink: 0;
+}
+
+#mercury {
+    width: 26vw;
+    margin: 0 0 0 -13vw;
+}
+#venus {
+    width: 36vw;
+    margin: 0 -18vw 0 0;
+}
+#earth {
+    width: 36vw;
+    margin: 0 0 0 -18vw;
+}
+#mars {
+    width: 30vw;
+    margin: 0 -15vw 0 0;
+}
+#jupiter {
+    width: 44vw;
+    height: auto;
+    margin: 0 0 0 -25vw;
+}
+#saturn {
+    width: 60vw;
+    margin: 0 -30vw 0 0;
+}
+#uranus {
+    width: 44vw;
+    margin: 0 0 0 -22vw;
+}
+#neptune {
+    width: 44vw;
+    margin: 0 -22vw 0 0;
+}
+
+h4 {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    margin-bottom: 2rem;
+}
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+section {
+    margin: 10rem 0;
+}
+
+@media (max-width: 950px) {
+    .base-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .base-flex div {
+        padding: 0 3rem !important;
+        margin: 0 1rem !important;
+    }
+
+    .base-flex div {
+        text-align: center;
+    }
+
+    .base-flex img {
+        margin: 2rem auto 4rem auto !important;
+    }
+
+    h4,
+    h5 {
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        letter-spacing: 0px;
+        margin-bottom: 2rem !important;
+    }
+}
+
+.footerlogo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: gray;
+  letter-spacing: 10px;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+}
+footer {
+  background: hsl(216, 22%, 5%);
+
+  padding: 30px 0px;
+
+  text-align: center;
+}
+
+footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+footer a {
+  cursor: pointer;
+}
+footer .row a,
+footer a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+footer .row a:hover {
+  color: #fff;
+}
+
+footer .row ul {
+  width: 100%;
+}
+
+footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+section:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+div:last-of-type {
+    padding-bottom: 0rem !important;
+    margin-bottom: 2rem !important;
+}
+
+@media (max-width: 720px) {
+  footer {
+    text-align: left;
+    padding: 5%;
+  }
+  footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+}
